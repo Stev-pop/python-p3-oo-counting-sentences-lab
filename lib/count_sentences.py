@@ -30,6 +30,6 @@ class MyString:
         for marker in ['?', '!']:
             value = value.replace(marker, '.')
         
-        sentences = [s for s in value.split('.') if s]
+        sentences = [sentence for sentence in value.split('.') if sentence]
         
         return len(sentences)
